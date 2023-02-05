@@ -32,6 +32,5 @@ pip install -e .
   - [simclr_different_blocks_batch.ipynb](https://github.com/mona251/Intriguing-Properties-of-Contrastive-Losses/blob/main/scripts/hierarchical_properties/simclr_different_blocks_batch.ipynb) shows SimCLR's learned features on batches of input images.
 
 ## Generate the data
-To generate the images to reproduce other experiments of the [paper](https://proceedings.neurips.cc/paper/2021/hash/628f16b29939d1b060af49f66ae0f7f8-Abstract.html) 
-see the Jupyter notebooks at [./scripts/data_generation/](https://github.com/mona251/Intriguing-Properties-of-Contrastive-Losses/tree/main/scripts/data_generation). 
-
+[./scripts/data_generation/](https://github.com/mona251/Intriguing-Properties-of-Contrastive-Losses/tree/main/scripts/data_generation) contains Jupyter notebooks that  reproduce the construction of two out of three datasets of the original [paper](https://proceedings.neurips.cc/paper/2021/hash/628f16b29939d1b060af49f66ae0f7f8-Abstract.html) with explicit and controllable competing features that can be used to reproduce the
+other experiments of the original work that we did not replicate.
