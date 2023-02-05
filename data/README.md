@@ -12,7 +12,7 @@ b2 = loaded['b2']
 b3 = loaded['b3']
 b4 = loaded['b4']
 ```
-
+```
 for i, (img, blocks) in enumerate(imgs_blocks):
     fname = f'./data/dog{i:0>3}.npz'
     print(f"Saving to: {fname}")
