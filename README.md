@@ -21,9 +21,17 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+## Experiments
+### Linear Evaluation of SimCLR
+[simclr-lineval.ipynb](https://github.com/mona251/Intriguing-Properties-of-Contrastive-Losses/blob/main/simclr-lineval.ipynb) performs the linear evaluation of SimCLR with specified number of epochs, batch size, and number of layers of the projection head. 
+
+### SimCLR learns local features that exhibit hierarchical properties
+- [raw_pixels.ipynb](https://github.com/mona251/Intriguing-Properties-of-Contrastive-Losses/blob/main/scripts/hierarchical_properties/raw_pixels.ipynb) visualizes the clustered pixels of raw input images.
+- [simclr.ipynb](https://github.com/mona251/Intriguing-Properties-of-Contrastive-Losses/blob/main/simclr.ipynb) extracts features from block group 1, 2, 3, and 4 of SimCLR's base encoder. The extracted features can be then used in the following two Jupyter notebooks:
+  - [simclr_different_blocks.ipynb](https://github.com/mona251/Intriguing-Properties-of-Contrastive-Losses/blob/main/scripts/hierarchical_properties/simclr_different_blocks.ipynb) shows SimCLR's learned features on single input images and that the learning of local features is also achieved with other clustering methods.
+  - [simclr_different_blocks_batch.ipynb](https://github.com/mona251/Intriguing-Properties-of-Contrastive-Losses/blob/main/scripts/hierarchical_properties/simclr_different_blocks_batch.ipynb) shows SimCLR's learned features on batches of input images.
 
 ## Generate the data
-
 To generate the images to reproduce other experiments of the [paper](https://proceedings.neurips.cc/paper/2021/hash/628f16b29939d1b060af49f66ae0f7f8-Abstract.html) 
 see the Jupyter notebooks at [./scripts/data_generation/](https://github.com/mona251/Intriguing-Properties-of-Contrastive-Losses/tree/main/scripts/data_generation). 
 
